@@ -37,7 +37,7 @@ export default function RootLayout({ children }) {
           <Provider>
             <div className="flex">
               <Slider />
-              <div className='content'>
+              <div className='content absolute w-[calc(100%-310px)] min-h-screen right-0 py-8'>
                 {children}
               </div>
             </div>
