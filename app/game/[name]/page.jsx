@@ -88,7 +88,7 @@ const Game = () => {
     }, [decodedName]);
 
     return (
-        <div className='w-[98%]'>
+        <div className='w-[98%] px-3'>
             {isLoading ? (
                 <div className="flex items-center justify-center h-[80vh]">
                     <Loading />

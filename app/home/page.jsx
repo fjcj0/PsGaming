@@ -106,7 +106,7 @@ const Home = () => {
             ) : (
                 <div>
                     <ToastContainer />
-                    <div className='w-[98%] flex items-center lg:flex-row sm:flex-col gap-10 lg:justify-between sm:justify-center mb-5'>
+                    <div className='w-[98%] flex flex-col items-center gap-6 mb-5'>
                         <div>
                             <Search />
                         </div>

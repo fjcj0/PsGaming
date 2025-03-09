@@ -16,12 +16,21 @@ import {
     useUser, SignInButton, SignUpButton, SignOutButton,
     UserButton
 } from '@clerk/nextjs'
+import { useResponsiveStore } from '@/store/useResponsiveStore';
 const Slider = () => {
     const { userDetail } = useContext(UserDetailContext);
     const pathname = usePathname();
     const { isSignedIn } = useUser();
+    const { isMenuOpen } = useResponsiveStore();
     return (
-        <div className="slider mt-5 fixed w-[280px] min-h-[80vh] bg-black left-5 rounded-2xl flex flex-col items-start p-2.5">
+        <div
+            className=" z-50 slider mt-5 fixed bg-black left-5 rounded-2xl flex flex-col items-start p-2.5"
+            style={{
+                width: isMenuOpen ? '280px' : '0',
+                transform: isMenuOpen ? 'translateX(0rem)' : 'translateX(-20rem)',
+                transition: 'width 0.3s ease, transform 0.3s ease',
+            }}
+        >
             <div>
                 <div className="flex my-2">
                     <Image src="/dashboardlogo.png" width={35} height={35} alt="" />

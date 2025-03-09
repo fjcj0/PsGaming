@@ -62,7 +62,7 @@ const Profile = () => {
             ) : (
                 isSignedIn ? (
                     <div className='w-[98%] mx-auto'>
-                        <div className='flex items-center justify-center'>
+                        <div className='flex z-10 items-center justify-center'>
                             <UserProfile />
                         </div>
                         <div className='my-5'>
