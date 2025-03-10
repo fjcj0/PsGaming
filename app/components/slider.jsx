@@ -24,7 +24,7 @@ const Slider = () => {
     const { isMenuOpen } = useResponsiveStore();
     return (
         <div
-            className=" z-50 slider mt-5 fixed bg-black left-5 rounded-2xl flex flex-col items-start p-2.5"
+            className="z-50 slider top-5 fixed bg-black left-5 rounded-2xl flex flex-col items-start p-2.5"
             style={{
                 width: isMenuOpen ? '280px' : '0',
                 transform: isMenuOpen ? 'translateX(0rem)' : 'translateX(-20rem)',

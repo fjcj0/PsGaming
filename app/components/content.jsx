@@ -16,7 +16,7 @@ const Content = ({ children }) => {
     }, []);
     return (
         <div
-            className='content absolute py-8 min-h-screen right-0'
+            className='content absolute py-8 min-h-screen right-0 px-3'
             style={{
                 width: isMobile ? '100%' : isMenuOpen ? 'calc(100% - 310px)' : '100%',
                 transition: 'width 0.3s ease',
