@@ -95,7 +95,7 @@ export default function Home() {
       });
       return topCountryDetails;
     } catch (error) {
-      console.error("Error fetching top countries:", error.message);
+      console.log("Error fetching top countries:", error.message);
     }
   };
   useEffect(() => {
